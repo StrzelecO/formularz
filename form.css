@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f3e7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	width: 800px;
+	max-width: 800px;
+	margin: 50px auto;
+	background-color: #333;
+	color: #ddd;
+	box-shadow: 0 0 10px #000;
+	border-radius: 8px;
+}
+
+form {
+	padding: 20px 40px;
+	font-size: 18px;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form-box {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.error-info {
+	margin-top: 8px;
+	color: rgb(245, 138, 119);
+	height: 15px;
+	font-size: 16px;
+	visibility: hidden;
+}
+
+.form-box label {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+.form-box input,
+.form-box select {
+	position: absolute;
+	right: 0;
+	width: 60%;
+	height: 25px;
+	font-size: 16px;
+	border: 1px solid rgb(197, 197, 197);
+	border-radius: 5px;
+}
+
+.form-box input {
+	padding: 8px;
+}
+
+.form-box select {
+	padding: 0px 3px;
+}
+
+.fa-solid {
+	position: absolute;
+	right: 62%;
+	top: 5px;
+	color: lightgreen;
+	display: none;
+}
+
+.fa-check {
+	color: lightgreen;
+}
+
+.valid {
+	display: inline-block;
+}
+
+.form-box input::placeholder {
+	font-size: 14px;
+	color: black;
+}
+
+.form-box textarea {
+	max-width: 100%;
+	min-width: 100%;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.click-box {
+	margin-bottom: 15px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	height: 15px;
+	width: 15px;
+}
+
+input[type='checkbox'] {
+	margin-left: 15px;
+	border: 1px solid rgb(197, 197, 197);
+}
+
+input[type='radio'] {
+	margin-right: 20px;
+	margin-left: 5px;
+}
+
+.btns {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.btns button {
+	width: 50%;
+	margin: 0 10px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: scale 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.btns button:hover {
+	scale: 0.9;
+	color: #ddd;
+	background-color: #333;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		width: 100vw;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+
+	form {
+		padding: 20px;
+		font-size: 14px;
+	}
+
+	.form-box {
+		position: static;
+		margin-bottom: 20px;
+	}
+
+	.form-box input,
+	.form-box select {
+		position: static;
+		width: 100%;
+		height: 20px;
+		font-size: 14px;
+	}
+
+	.error-info {
+		margin-top: 8px;
+		color: rgb(245, 138, 119);
+		font-size: 12px;
+		visibility: hidden;
+	}
+
+	.valid {
+		visibility: hidden;
+	}
+}

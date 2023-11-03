@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a5509da71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form method="" action="">
+            <h1>Wypełnij formularz!</h1>
+            <div class="form-box">
+                <label for="name">Imię:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="text" id="name" maxlength="50">
+                <p class="error-info">
+                </p>
+            </div>
+            <div class="form-box">
+                <label for="surname">Nazwisko:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="text" id="surname" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="password">Hasło:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="password" id="password" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="town">Miejscowość:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="text" id="town" class="error" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="street">Ulica:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="text" id="street" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="house-number">Numer domu/mieszkania:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="text" id="house-number" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="voivodeship">Województwo:</label>
+                <i class="fa-solid fa-check"></i>
+                <select id="voivodeship">
+                    <option value="0" disabled selected>- wybierz województwo -</option>
+                    <option value="DS">dolnośląskie</option>
+                    <option value="KP">kujawsko-pomorskie</option>
+                    <option value="LS">lubuskie</option>
+                    <option value="LB">lubelskie</option>
+                    <option value="LD">łódzkie</option>
+                    <option value="MP">małopolskie</option>
+                    <option value="MZ">mazowieckie</option>
+                    <option value="OP">opolskie</option>
+                    <option value="PK">podkarpackie</option>
+                    <option value="PL">podlaskie</option>
+                    <option value="PM">pomorskie</option>
+                    <option value="SL">śląskie</option>
+                    <option value="SK">świętokrzyskie</option>
+                    <option value="WM">warmińsko-mazurskie</option>
+                    <option value="WP">wielkopolskie</option>
+                    <option value="ZP">zachodnio-pomorskie</option>
+                </select>
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="birth-date">Data urodzenia:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="date" id="birth-date" min="1900-01-01">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="phone-number">Numer telefonu:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="tel" id="phone-number" placeholder="+48000000000" maxlength="15">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="email">Adres mail:</label>
+                <i class="fa-solid fa-check"></i>
+                <input type="email" id="email" maxlength="50">
+                <p class="error-info"></p>
+            </div>
+            <div class="form-box">
+                <label for="comments">Uwagi:</label>
+                <textarea id="comments" cols="30" rows="2" maxlength="5000" placeholder="(max 5000 znaków)"></textarea>
+            </div>
+            <div class="click-box">
+                <label for="driving-license">Prawo jazdy:</label>
+                <input type="checkbox" id="driving-license">
+            </div>
+            <div class="click-box">
+                <p>Płeć:</p>
+
+                <label for="male">Mężczyzna</label>
+                <input type="radio" id="male" name="sex">
+
+                <label for="female">Kobieta</label>
+                <input type="radio" id="female" name="sex">
+
+                <p class="error-info">error</p>
+            </div>
+            <div class="btns">
+                <button type="submit" class="send">Wyślij</button>
+                <button type="reset" class="reset">Wyczyść</button>
+            </div>
+        </form>
+    </div>
+    <script src="./form.js"></script>
+</body>
+
+</html>
